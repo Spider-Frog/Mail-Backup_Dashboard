@@ -1,2 +1,21 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<script>
+import Card from '../components/UI/Card.svelte';
+import Heading from '../components/UI/Heading.svelte';
+</script>
+
+<Heading>Dashboard</Heading>
+<hr />
+<div class="flex gap-8">
+	<Card>
+		test
+	</Card>
+	<Card>
+		test
+	</Card>
+	<Card>
+		test
+	</Card>
+	<Card>
+		test
+	</Card>
+</div>
