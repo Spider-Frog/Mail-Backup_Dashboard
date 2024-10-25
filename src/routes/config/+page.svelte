@@ -38,7 +38,12 @@
 			Name
 		</TableData>
 		<TableData>
-			Messages
+			<Button type="success">
+				Edit
+			</Button>
+			<Button type="danger">
+				Delete
+			</Button>
 		</TableData>
 	</TableRow>
 	<TableRow>
@@ -52,7 +57,12 @@
 			Name
 		</TableData>
 		<TableData>
-			Messages
+			<Button type="success">
+				Edit
+			</Button>
+			<Button type="danger">
+				Delete
+			</Button>
 		</TableData>
 	</TableRow>
 	<TableRow>
@@ -66,8 +76,11 @@
 			Name
 		</TableData>
 		<TableData>
-			<Button>
-				tset
+			<Button type="success">
+				Edit
+			</Button>
+			<Button type="danger">
+				Delete
 			</Button>
 		</TableData>
 	</TableRow>
