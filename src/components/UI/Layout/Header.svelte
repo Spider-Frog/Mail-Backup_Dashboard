@@ -1,22 +1,45 @@
-<script>
-import Icon from '../Icon.svelte';
-</script>
-
 <header class="p-3 text-bg-dark">
 	<div class="container">
-		<nav class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-			<a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-				<Icon name="mail" />
-			</a>
-
-			<ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-				<li><a href="/" class="nav-link px-2 text-secondary">Home</a></li>
-				<li><a href="/mail" class="nav-link px-2 text-white">Mail</a></li>
-				<li><a href="/config" class="nav-link px-2 text-white">Configurations</a></li>
-			</ul>
-
-			<div class="text-end">
-				<button type="button" class="btn btn-outline-light me-2">Login</button>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="/">Dashboard</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a href="/messages">
+								<button class="btn btn-dark">
+									Messages
+								</button>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="/tasks">
+								<button class="btn btn-dark">
+									Tasks
+								</button>
+							</a>
+						</li>
+						<li class="nav-item dropdown">
+							<button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+								Configurations
+							</button>
+							<ul class="dropdown-menu dropdown-menu-dark">
+								<li><a class="dropdown-item" href="/config/mail">Mail</a></li>
+								<li><a class="dropdown-item" href="/config/storage">Storage</a></li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a href="/users">
+								<button class="btn btn-dark">
+									Users
+								</button>
+							</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</nav>
 	</div>
